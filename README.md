@@ -166,17 +166,6 @@ erDiagram
       * `CASCADE`: Used where child data is entirely dependent on the parent (e.g., deleting a `seller` also deletes their `seller_address` and `seller_offer` records).
       * `SET NULL`: Used where the child entity can logically exist without the parent (e.g., deleting a `publisher` sets `book.publisher_id` to `NULL`, but the book record itself is preserved).
 
------
-
-## How to Use
-
-1.  **Prerequisites**: Ensure you have PostgreSQL installed and running.
-
-2.  **Execution**: You can create the entire schema by running the `schema.sql` file against your target database using `psql` or any other PostgreSQL client.
-
-    ```bash
-    psql -U your_username -d your_database_name -a -f schema.sql
-    ```
 
 <!-- end list -->
 
