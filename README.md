@@ -168,5 +168,3 @@ erDiagram
 
 
 <!-- end list -->
-
-```
