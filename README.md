@@ -1,20 +1,10 @@
-# PostgreSQL Schema for a Book section in Torob.com
+# PostgreSQL Schema for a Book section in Torob.com *university assignment*
 
 ## Project Overview
 
 This repository contains the complete database schema for the book section of a price comparison aggregator website, modeled after services like Torob.com. The schema is designed to efficiently store and manage data about books, publishers, authors, sellers, and their respective price offerings.
 
 The primary goal of this project was to design and implement a robust, highly-normalized, and scalable database architecture using PostgreSQL. The design emphasizes data integrity, query performance, and adherence to established database design principles.
-
-***
-
-## Schema Design Philosophy
-
-The architecture is built upon the following core principles:
-
-* **Third Normal Form (3NF):** The schema is fully normalized to at least 3NF. This was achieved by separating distinct entities into their own tables and using junction tables to resolve many-to-many relationships. This approach minimizes data redundancy, prevents data anomalies (insertion, update, deletion), and ensures a single source of truth for all entities.
-* **Data Integrity:** Relationships between tables are strictly enforced using Primary and Foreign Key constraints. This guarantees referential integrity, preventing orphaned records and ensuring that data remains consistent across the database.
-* **Performance and Scalability:** A comprehensive indexing strategy is implemented to ensure fast query performance for common use cases, such as searching for books, joining tables to retrieve offers, and sorting by price. Appropriate data types were chosen to optimize storage and speed.
 
 ***
 
@@ -165,6 +155,3 @@ erDiagram
   * **`ON DELETE` Policies**:
       * `CASCADE`: Used where child data is entirely dependent on the parent (e.g., deleting a `seller` also deletes their `seller_address` and `seller_offer` records).
       * `SET NULL`: Used where the child entity can logically exist without the parent (e.g., deleting a `publisher` sets `book.publisher_id` to `NULL`, but the book record itself is preserved).
-
-
-<!-- end list -->
