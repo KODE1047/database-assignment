@@ -1,4 +1,4 @@
-# <*university assignment*> PostgreSQL Schema for a Book section in Torob.com
+# <*university assignment*> Fist Assignment
 
 ## Project Overview
 
