@@ -1,4 +1,4 @@
-# PostgreSQL Schema for a Book section in Torob.com *university assignment*
+# <*university assignment*> PostgreSQL Schema for a Book section in Torob.com
 
 ## Project Overview
 
