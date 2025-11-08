@@ -1,6 +1,6 @@
 # <*university assignment*> Fist Assignment
 
-## Assignment Overview
+### Assignment Overview
 
 This repository contains the complete database schema for the book section of a price comparison aggregator website, modeled after services like Torob.com. The schema is designed to efficiently store and manage data about books, publishers, authors, sellers, and their respective price offerings.
 
