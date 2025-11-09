@@ -114,7 +114,7 @@ ROLLBACK;
 
 
 ---
--- هـ : Add a new 'In Process' order for today.
+-- و : Add a new 'In Process' order for today.
 ---
 BEGIN;
 
